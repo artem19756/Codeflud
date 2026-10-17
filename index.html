@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0c10">
+  <meta name="description" content="Codeflud — интерактивная академия программирования. Учись, практикуйся и отслеживай прогресс.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>Codeflud — Академия программирования</title>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar glass">
+      <a class="brand" href="#" data-page="home"><span class="brand-mark">C</span><span>Codeflud<small>АКАДЕМИЯ КОДА</small></span></a>
+      <div class="nav-label">ОБУЧЕНИЕ</div>
+      <nav class="nav">
+        <button class="nav-item active" data-page="home"><span>⌂</span>Главная</button>
+        <button class="nav-item" data-page="courses"><span>▦</span>Курсы</button>
+        <button class="nav-item" data-page="practice"><span>⌘</span>Практика</button>
+        <button class="nav-item" data-page="quiz"><span>✦</span>Мини-тест</button>
+        <button class="nav-item" data-page="ai"><span>✧</span>Помощник</button>
+        <button class="nav-item" data-page="bookmarks"><span>☆</span>Закладки</button>
+        <button class="nav-item" data-page="profile"><span>◉</span>Профиль</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="xp-card"><span class="eyebrow">ТВОЙ ПРОГРЕСС</span><strong><span id="sideXp">0</span> XP</strong><div class="progress-track"><i id="sideProgress"></i></div><small id="sideProgressText">0/100 XP до следующего уровня</small></div>
+        <div class="sidebar-note">✦ <span>Учись в своём темпе.<br>Каждый шаг важен.</span></div>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div><span class="eyebrow">ТВОЯ ПЛАТФОРМА</span><h1 id="pageTitle">Главная</h1></div><div class="top-user"><span class="avatar" id="topAvatar">У</span><span id="userNameTop">Ученик</span><span class="pill" id="topLevel">Уровень 1</span></div></header>
+      <section id="app-content" aria-live="polite"></section>
+      <footer>CODEFLUD <span>·</span> Создавай. Изучай. Развивайся.</footer>
+    </main>
+  </div>
+  <div class="mobile-nav">
+    <button data-page="home" class="active"><span>⌂</span>Главная</button>
+    <button data-page="courses"><span>▦</span>Курсы</button>
+    <button data-page="practice"><span>⌘</span>Практика</button>
+    <button data-page="profile"><span>◉</span>Профиль</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
